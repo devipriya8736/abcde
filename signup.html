@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;    
+            }
+        #signup{
+            display: grid;
+            grid-template-columns: auto;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin-top: 7vh;
+            padding: 15px;
+            background-color: rgb(160, 204, 243);
+        }
+        #textfield{
+            height: 5vh;
+            width: 30vw;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding-left: 10px;
+            margin-top:2%;
+            margin-bottom: 1%;
+            margin-left:1%;
+        }
+        #submit{
+            width:10vw;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            margin-left: 30%;
+            background-color: rgb(0, 0, 0);
+            color:white;
+            height:5vh;
+            font-size: clamp(10px,1vw,20px);
+            box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+        }
+        h1{
+            display:flex;
+            justify-content: center;
+        }
+        #login{
+            display: inline;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-weight:540;
+        }
+        label{
+            font-size: clamp(10px,3vw,20px);
+        }
+    </style>
+</head>
+<body>
+    <div id="signup">
+        <h1>Signup</h1>
+    <form action="/signup" method="post">
+    <div>
+        <div><label for="">Full Name</label></div>
+        <div><input type="text" name="fullname" placeholder="Enter the full name" id="textfield"></div>
+    </div>
+    <div>
+        <div><label for="">User Name</label></div>
+        <div><input type="text" name="name" placeholder="Enter the Username" id="textfield"></div>
+    </div>
+    <div>
+        <div><label for="">Password</label></div>
+        <div><input type="password" name="password" placeholder="Enter the password" id="textfield"></div>
+    </div>
+    <div>
+        <div><label for="">Email</label></div>
+        <div><input type="email" name="email" placeholder="Enter the email" id="textfield"></div>
+    </div>
+    <div>
+        <div><label for="">Mobile Number</label></div>
+        <div><input type="number" name="phone" placeholder="Enter the mobile number" id="textfield"></div>
+    </div>
+    <div>
+        <input type="submit" id="submit">
+    </div>
+    <div id="login">
+        <p>Already have an account?</p>
+        <a href="login.html">Login</a>
+    </div>
+    </form>
+</div>
+</body>
+</html>
